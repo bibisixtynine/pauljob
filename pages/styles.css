@@ -27,9 +27,9 @@ body {
     flex-flow: column nowrap;
     gap: 10px;
     height: fit-content;
-    max-width: 975px;
+    max-width: 100%; /*jb */
     overflow: auto;
-    padding: 50px;
+    /*padding: 50px; jb */
     position: relative;
     width: auto;
     gap: 64px;
