@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Manrope', sans-serif;
+    background-color: rgb(0, 0, 0);
 }
 
 .root {
@@ -29,7 +30,7 @@ body {
     height: fit-content;
     max-width: 100%; /*jb */
     overflow: auto;
-    /*padding: 50px; jb */
+    padding: 70px 0px; /* added 0px and increase 50 to 70jb */
     position: relative;
     width: auto;
     gap: 64px;
