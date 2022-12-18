@@ -134,7 +134,7 @@ const Home = () => {
             <h1>Demandez votre lettre de motivation !</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Donnez moi quelques informations sur vous et l'organisation que vous visez dans le cadre ci-dessous, appuyez ensuite sur 'GO!' et je m'occupe du reste en une dizaine de secondes! Si vous voulez me contacter, envoyez moi un mail à <a href="mailto:profpepite@proton.me" style={{color: 'gray'}}>profpepite@proton.me</a></h2>
+            <h2>Donnez moi quelques informations sur vous et l'organisation que vous visez dans le cadre ci-dessous, appuyez ensuite sur 'GO!' et je m'occupe du reste en une dizaine de secondes! Contact: <a href="mailto:profpepite@proton.me" style={{color: 'gray'}}>profpepite@proton.me</a></h2>
           </div>
         </div>
         <div className="prompt-container">
