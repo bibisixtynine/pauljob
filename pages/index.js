@@ -139,7 +139,7 @@ const Home = () => {
         </div>
         <div className="prompt-container">
           <textarea
-            placeholder="Commencez par remplacer ce message en écrivant, par exemple : Je m'appelle Michel, j'ai 20 ans, et je rêve de bosser pour Tesla. Je n'ai aucune expérience mais je suis hyper motive !, puis appuyer sur 'GO!' et donnez moi une dizaine de secondes pour vous répondre..."
+            placeholder="Commencez par remplacer ce message en écrivant, par exemple : Je m'appelle Michel, j'ai 20 ans, et je rêve de bosser pour Tesla. Je n'ai aucune expérience mais je suis hyper motive !, puis appuyer sur 'GO!' et donnez moi une vingtaine de secondes pour vous répondre !"
             className="prompt-box"
             value={userInput}
             onChange={onUserChangedText}
