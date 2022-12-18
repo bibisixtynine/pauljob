@@ -26,14 +26,13 @@ body {
     align-items: center;
     flex: 0 0 auto;
     flex-flow: column nowrap;
-    gap: 10px;
     height: fit-content;
     max-width: 100%; /*jb */
     overflow: auto;
     padding: 70px 0px 0px 0px; /* added 0px and increase 50 to 70jb */
     position: relative;
     width: auto;
-    gap: 0px; /* jb*/
+    gap: 20px; /* jb*/
 }
 
 .header {    
