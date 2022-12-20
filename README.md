@@ -19,5 +19,6 @@ run it
 # Head to [localhost:3000](http://localhost:3000) you should see the webapp !
 
 ## How to deploy with VERCEL ?
+good question !
 
 
