@@ -134,7 +134,7 @@ const Home = () => {
             <h1>Demandez votre lettre de motivation !</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Donnez moi quelques informations sur vous et l'organisation que vous visez dans le cadre ci-dessous (par example, Je m'appelle Michel, j'ai 20 ans, et je rêve de bosser pour Tesla. Je n'ai aucune expérience mais je suis hyper motivé!), appuyez ensuite sur 'GO!' et je m'occupe du reste en une douzaine de secondes!</h2>
+            <h2>Donnez moi quelques informations sur vous et l'organisation que vous visez dans le cadre ci-dessous (par exemple, Je m'appelle Michel, j'ai 20 ans, et je rêve de bosser pour Tesla. Je n'ai aucune expérience mais je suis hyper motivé!), appuyez ensuite sur 'GO!' et je m'occupe du reste en une douzaine de secondes!</h2>
           </div>
         </div>
         <div className="prompt-container">
