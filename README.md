@@ -1,11 +1,6 @@
 # buildspace 
 ### Welcome 👋
-This is a fork of the starter template for the [build your own AI writing assistant w/ GPT-3](https://buildspace.so/builds/ai-writer) project.
-
-Some code has been added during the training session, to make it a real AI application based !
-=> Added pages/api/generate.js folder (api) and file(generate.js)
-=> Added .env file (and suppressed .env.example file)
-=> Modified pages/index.js
+This is a french version for 'Ask your scenario !'
 
 ## How to edit with VSCODE ?
 # clone the the "gpt3-writer-starter" project from buildspace repo in your github account
