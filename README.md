@@ -1,6 +1,6 @@
 # buildspace 
 ### Welcome 👋
-This is a french version for 'Ask your scenario !'
+Demandez votre lettre de motivation !
 
 ## How to edit with VSCODE ?
 # clone the the "gpt3-writer-starter" project from buildspace repo in your github account
