@@ -1,11 +1,12 @@
 import './styles.css';
 import Head from 'next/head';
 
-// viewport meta tag must be in _app.js (https://nextjs.org/docs/messages/no-document-viewport-meta)
-
 function App({ Component, pageProps }) {
-  <Head>
-<meta property="og:title" content="Générateur IA de Lettre de Motivation" key="title" />
+
+  return (
+    <>
+      <Head>
+        <meta property="og:title" content="Générateur IA de Lettre de Motivation" key="title" />
         <meta property="og:description" content="construit avec passion" key="description" />
         <meta
           property="og:image"
@@ -31,12 +32,14 @@ function App({ Component, pageProps }) {
           rel="apple-touch-icon"
           href="https://cdn.glitch.com/fd9e84f4-4370-493a-847e-22cebb631384%2Fbabyduck.webp?v=1628793057158"
         />
-  </Head>
-  return <Component {...pageProps} />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
+
 }
+
 export default App;
-
-
 
 
 
