@@ -9,6 +9,7 @@ import 'firebase/database';
 
 import { useState } from 'react';
 
+const VERSION_NUMBER = 'v1.0.0.2'
 
 //=======================================================
 //
@@ -168,6 +169,7 @@ const Home = () => {
           )}
           <div className="contact">
             <h2>Contact: <a href="mailto:profpepite@proton.me" style={{ color: 'gray' }}>profpepite@proton.me</a></h2>
+            <p>{VERSION_NUMBER}</p>
           </div>
         </div>
       </div>
