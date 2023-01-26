@@ -9,82 +9,7 @@ import 'firebase/database';
 
 import { useState } from 'react';
 
-const VERSION_NUMBER = 'v1.0.0.2'
-
-//=======================================================
-//
-// FUNCTION -> UUID
-//
-var UUID_COUNTER = 0
-export function UUID() {
-  UUID_COUNTER++;
-  let days = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
-  let date = new Date();
-  return (
-
-    date.getFullYear() +
-    "_" +
-    ("0" + (date.getMonth() + 1)).slice(-2) + //BUG? Months start at 0
-    "_" +
-    ("0" + date.getDate()).slice(-2) +
-    "_" +
-    ("0" + date.getHours()).slice(-2) +
-    ":" +
-    ("0" + date.getMinutes()).slice(-2) +
-    ":" +
-    ("0" + date.getSeconds()).slice(-2) +
-    "," +
-    ("000" + date.getMilliseconds()).slice(-3) +
-    "_" +
-    ("000000" + UUID_COUNTER).slice(-6)
-  );
-}
-//
-// FUNCTION -> UUID
-//
-//=======================================================
-
-
-//=======================================================
-//
-// FIREBASE 8
-//
-// 1. init
-const firebaseConfig = {
-  databaseURL:
-    'https://my-papayou-2-default-rtdb.europe-west1.firebasedatabase.app/',
-};
-//
-// 2. Initialize Firebase
-const apptiti = firebase.initializeApp(firebaseConfig);
-const databasetiti = firebase.database();
-//
-// 3.1 writeData, the write function !
-function writeData(path, key, value) {
-  firebase
-    .database()
-    .ref(path + '/' + key)
-    .set(value);
-}
-//
-// 3.3 let's send some data
-writeData('logopenai', UUID(), { log: 'start OK' })
-
-
-//
-// 4. read data if changed
-/*
-var newLogData = firebase.database().ref('logissim');
-newLogData.on('value', (snapshot) => {
-  const data = snapshot.val();
-  for (const property in data) {
-    let logMsg = data[property];
-    console.log(`${property}: ${logMsg.message}`);
-  }
-});
-*/
-//
-//=======================================================
+const VERSION_NUMBER = 'v1.0.0.5'
 
 const Home = () => {
   const [userInput, setUserInput] = useState('');
@@ -94,7 +19,6 @@ const Home = () => {
 
   const callGenerateEndpoint = async () => {
     setIsGenerating(true);
-
 
     const response = await fetch('/api/generate', {
       method: 'POST',
@@ -106,8 +30,6 @@ const Home = () => {
 
     const data = await response.json();
     const { output } = data;
-
-    writeData('openai', UUID(), { prompt: userInput, answer: output.text })
 
     setApiOutput(`${output.text}`);
     setIsGenerating(false);
