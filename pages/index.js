@@ -1,13 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { useState } from 'react';
 
 import coffeeLogo from '../assets/coffee-logo.png'
-
-// firebase 8.10.1
-import firebase from 'firebase/app';
-import 'firebase/database';
-
-import { useState } from 'react';
 
 const VERSION_NUMBER = 'v1.0.0.5'
 
